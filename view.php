@@ -19,7 +19,7 @@ require_once('Includes/connection.php');
         $sql5="select * from current_courses where Regno='".$GetID."';";
         $sql6="select * from current_courses where Regno='".$GetID."';";
         $sql9="select * from lor where Regno='".$GetID."';";
-        mysqli_select_db($con,"student_management");
+        mysqli_select_db($con,"KCXyqls2Xt");
         //ALTER TABLE student_data ADD CGPA VARCHAR(10) NOT NULL AFTER Password;
         //ALTER TABLE student_data ADD Sem INT(10) NOT NULL AFTER CGPA;
         //CREATE TABLE past_courses(Regno varchar(10),Course varchar(100));
