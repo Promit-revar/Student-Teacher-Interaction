@@ -93,7 +93,8 @@ else if(isset($_GET['edit']) && !isset($_SESSION['Faculty']))
         echo 'Connect Error';
     }
     $sql="select * from student_data where Regno='".$GetID."'";
-    mysqli_select_db($con,"student_management");
+    //mysqli_select_db($con,"student_management");
+    $con=mysqli_connect("remotemysql.com","KCXyqls2Xt","nfpoB4YGib");
     $res=mysqli_query($con,$sql);
 
     while($row=mysqli_fetch_assoc($res))
