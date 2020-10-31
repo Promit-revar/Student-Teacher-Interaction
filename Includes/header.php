@@ -45,7 +45,7 @@ if(isset($_SESSION['StudentID']) || isset($_SESSION['Faculty']))
     }
     $sql="select * from student_data where Regno='".$GetID."'";
     //mysqli_select_db($con,"student_management");
-    $con=mysqli_connect("remotemysql.com","KCXyqls2Xt","nfpoB4YGib");
+    mysqli_select_db($con,"KCXyqls2Xt");
     $res=mysqli_query($con,$sql);
 
     while($row=mysqli_fetch_assoc($res))
@@ -95,7 +95,7 @@ else if(isset($_GET['edit']) && !isset($_SESSION['Faculty']))
     }
     $sql="select * from student_data where Regno='".$GetID."'";
     //mysqli_select_db($con,"student_management");
-    $con=mysqli_connect("remotemysql.com","KCXyqls2Xt","nfpoB4YGib");
+    mysqli_select_db($con,"KCXyqls2Xt");
     $res=mysqli_query($con,$sql);
 
     while($row=mysqli_fetch_assoc($res))
