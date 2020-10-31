@@ -20,7 +20,7 @@
         $regno=$_GET['success'];
            $sqldel="DELETE FROM lor WHERE Regno='$regno' AND FacultyID='$fac'";
            //echo"<h1> Successfully Deleted!!! $fac $regno</h1>";
-        mysqli_select_db($con,"student_management");
+        mysqli_select_db($con,"KCXyqls2Xt");
         if(mysqli_query($con,$sqldel)){
             $msg="Successfully Deleted!!!";
             
@@ -31,7 +31,7 @@
             $fac=$_SESSION['Faculty'];
             $regno=$_GET['success'];
             //echo $regno;
-            mysqli_select_db($con,"student_management");
+            mysqli_select_db($con,"KCXyqls2Xt");
             $sql1="Select * from student_data where Regno='$regno'";
             $sql3="SELECT * FROM lor WHERE Regno='$regno' AND FacultyID='$fac'";
             $res1=mysqli_query($con,$sql1);

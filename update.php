@@ -1,6 +1,6 @@
 <?php
 require_once('Includes/header.php');
-    $conn=mysqli_connect("localhost","root","","student_management");
+    $conn=mysqli_connect("remotemysql.com","KCXyqls2Xt","nfpoB4YGib","KCXyqls2Xt");
     if(!$conn){
         die("Connection Failed!!!");
     }

@@ -10,7 +10,7 @@ if(isset($_SESSION['StudentID'])){
     
     $fid=$_GET['Faculty'];
     //echo "$reg"." $fid";
-    mysqli_select_db($con,"student_management");
+    mysqli_select_db($con,"KCXyqls2Xt");
     $sqlm="SELECT * FROM student_data WHERE Regno='$reg'";
     $res=mysqli_query($con,$sqlm);
     while($row=mysqli_fetch_assoc($res)){
@@ -33,7 +33,7 @@ $fname=$_POST['fname'];
 $branch=$_POST['branch'];
 $fid=$_POST['fid'];
 $reg=$_POST['reg'];
-mysqli_select_db($con,"student_management");
+mysqli_select_db($con,"KCXyqls2Xt");
 $sql="INSERT INTO lor (Regno,FacultyID) VALUES ('$reg','$fid') ";
 mysqli_query($con,$sql);
 }

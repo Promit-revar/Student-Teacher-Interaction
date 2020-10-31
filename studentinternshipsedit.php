@@ -8,7 +8,7 @@
    
         $GetID=$_GET['edit'];
     $sql="select * from internships where Regno='".$GetID."'";
-    mysqli_select_db($con,"student_management");
+    mysqli_select_db($con,"KCXyqls2Xt");
 $res=mysqli_query($con,$sql);
 class Internships{
 

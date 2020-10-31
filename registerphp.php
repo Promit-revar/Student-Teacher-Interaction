@@ -71,7 +71,7 @@ if(isset($_POST['register']))
         else{
             
             $sql="select * from student_data where Regno ='".$Regno."'";
-            mysqli_select_db($con,"student_management");
+            mysqli_select_db($con,"KCXyqls2Xt");
             $result=mysqli_query($con,$sql);
 
         

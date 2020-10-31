@@ -14,7 +14,7 @@
     $sql="select * from student_data where Regno='".$GetID."'";
     $sql2="select * from past_courses where Regno='".$GetID."';";
     $sql3="select * from current_courses where Regno='".$GetID."';";
-    mysqli_select_db($con,"student_management");
+    mysqli_select_db($con,"KCXyqls2Xt");
     $res=mysqli_query($con,$sql);
     $res2=mysqli_query($con,$sql2);
     $res3=mysqli_query($con,$sql3);

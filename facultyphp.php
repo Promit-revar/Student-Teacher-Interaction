@@ -13,7 +13,7 @@
             $Pass=mysqli_real_escape_string($con,$_POST['password']);
 
             $sql="select * from faculty_data where FacultyID ='".$Empid."'";
-            mysqli_select_db($con,"student_management");
+            mysqli_select_db($con,"KCXyqls2Xt");
             $res=mysqli_query($con,$sql);
             if($row=mysqli_fetch_assoc($res))
             {
