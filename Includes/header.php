@@ -37,7 +37,8 @@ if(isset($_SESSION['StudentID']) || isset($_SESSION['Faculty']))
     $_SESSION['GET']=$GetID=$_GET['success'];
     if($_SESSION['GET']==$_SESSION['StudentID']){
 
-      $con=mysqli_connect("localhost","root","");
+      //$con=mysqli_connect("localhost","root","");
+      $con=mysqli_connect("remotemysql.com","KCXyqls2Xt","nfpoB4YGib");
 
     if(!$con){
         echo 'Connect Error';
@@ -85,7 +86,8 @@ else if(isset($_GET['edit']) && !isset($_SESSION['Faculty']))
 {
   $_SESSION['GET']=$GetID=$_GET['edit'];
   if($_SESSION['GET']==$_SESSION['StudentID']){
-    $con=mysqli_connect("localhost","root","");
+    //$con=mysqli_connect("localhost","root","");
+    $con=mysqli_connect("remotemysql.com","KCXyqls2Xt","nfpoB4YGib");
 
     if(!$con){
         echo 'Connect Error';
