@@ -108,7 +108,7 @@ if(isset($_POST['register']))
 
 
                 $sql="Insert into student_data (Regno,Img,FName,LName,DOB,Branch,Email,Password,Date) values ('$Regno','$Image','$FirstName','$LastName','$DOB','$Branch','$email','$HashPassword','$date')";
-                mysqli_select_db($con,"student_management");
+                mysqli_select_db($con,"KCXyqls2Xt");
                 $result=mysqli_query($con,$sql);
                 move_uploaded_file($Temp,$Target);
                 header("location:register.php?success");
