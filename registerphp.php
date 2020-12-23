@@ -107,7 +107,7 @@ if(isset($_POST['register']))
             if($size<1000000){
 
 
-                $sql="Insert into student_data (Regno,Img,FName,LName,DOB,Branch,Email,Password,Date) values ('$Regno','$Image','$FirstName','$LastName','$DOB','$Branch','$email','$HashPassword','$date')";
+                $sql="Insert into student_data (Regno,Img,FName,LName,DOB,Branch,Email,Password,Date,CGPA,Sem) values ('$Regno','$Image','$FirstName','$LastName','$DOB','$Branch','$email','$HashPassword','$date','0','0')";
                 mysqli_select_db($con,"KCXyqls2Xt");
                 $result=mysqli_query($con,$sql);
                 move_uploaded_file($Temp,$Target);
